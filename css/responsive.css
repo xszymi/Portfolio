@@ -27,6 +27,12 @@
         height: 15vw;
     }
 }
+@media screen and (max-width: 430px){
+    .centered-div a{
+        font-size: 15px;
+    }
+}
+
 
 /* <---------------About me---------------> */
 @media screen and (max-width: 1345px) {    
