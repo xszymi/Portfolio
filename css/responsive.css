@@ -1,0 +1,131 @@
+/* <---------------Header---------------> */
+@media screen and (max-width: 1000px) {
+    .centered-div a{
+        font-size: 22px;
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .centered-div2 h1{
+        font-size: 25px;
+    }
+    .menu{
+        height: 10vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .centered-div a{
+        font-size: 20px;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .centered-div2 h1{
+        font-size: 20px;
+    }
+    .menu{
+        height: 15vw;
+    }
+}
+
+/* <---------------About me---------------> */
+@media screen and (max-width: 1345px) {    
+    .me{
+        height: 330px;
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 1000px) {    
+    .me{
+        height: 250px;
+        font-size: 0.8em;
+    }
+    .about{
+        flex-direction: column;
+        height: 900px;
+    }
+}
+   
+@media screen and (max-width: 700px) {
+    .about{
+        flex-direction: column;
+        height: 1000px;
+    }
+    .me{
+        margin: 15px 20px;
+        height: 300px;
+        width: auto;
+        font-size: 0.7em;
+    } 
+    .me img{
+       width: 70px; 
+    }
+}
+
+/* <---------------Skil---------------> */
+@media screen and (max-width: 700px) {
+    .skils h1{
+        font-size: 2.5em;
+    }
+    .skils h1{
+        padding-left: 20px;
+    }
+    .skils hr{
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .hr1{
+        width: 390px;
+    }
+    .hr2{
+        width: 440px;
+    }
+    .hr3{
+        width: 370px;
+    }
+    .hr4{
+        width: 240px;
+    }
+    .englishhr1{
+        width: 150px;
+    }
+    .englishhr2{
+        width: 150px;
+    }
+    .englishhr3{
+        width: 150px;
+    }
+    .englishhr4{
+        width: 150px;
+    }
+    .englishhr5{
+        width: 150px;
+    }
+}
+
+/* <---------------Contact---------------> */
+@media screen and (max-width: 1000px) {
+    form{
+        width: 350px;
+    }
+    .contact input{
+        width: 300px;
+    }
+    .contact textarea{
+        width: 300px;
+    }
+    .contact h1{
+        font-size: 2.5em;
+    }
+    .hr5{
+        width: 460px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .contact h1{
+        font-size: 1.8em;
+    }
+    .contact hr{
+        width: 330px;
+    }
+}

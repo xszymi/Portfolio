@@ -1,0 +1,357 @@
+*{
+  margin: 0px;
+  scroll-behavior: smooth; 
+  overflow-x: hidden 
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* <---------------Header---------------> */
+.menu{
+  overflow-y: hidden;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.404);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.centered-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered-div a{
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.toenglish{
+  display: flex;
+  justify-content: right;
+}
+.centered-div img{
+  height: 40px;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;   
+  width: 100%;
+}
+.top{
+  background-image: url('../img/ship.png');
+  background-size: cover;
+}
+/* Typerwriter Effect */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.centered-div2 h1{
+  color: #fff;
+  font-family: 'Anonymous Pro', monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+  
+  /* The typing effect */
+@keyframes typing{
+  from { width: 0 }
+  to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret{
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* <---------------About me---------------> */
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  background-color: grey;
+}
+   
+.me{
+  margin: 1vw;
+  border: #3a3939 solid;
+  border-radius: 10px;
+  height: 320px;
+  width: 500px;
+  background-color: #3a3939;
+  color: rgb(224, 224, 224);
+  padding: 10px 20px;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.me p{
+  font-size: 1.2em;
+}
+.me h1{
+  padding: 10px 0px;
+}
+
+/* <---------------Skil---------------> */
+.skils{
+  display: flex;
+  min-height: 75vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em;
+  background: #181616;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 99vw;
+}
+
+.skils h1{
+  font-family: 'Anonymous Pro', monospace;
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 60px;
+  font-size: 3.3em;
+  color: white;
+}
+.skils hr{
+  margin-left: 60px;
+  margin-bottom: 50px;
+  border: 1px solid red;
+  box-shadow: rgba(255, 0, 0, 0.7) 0px 2px 1px, rgb(255, 0, 0,0.7) 0px 4px 2px, rgb(255,0, 0,0.7) 0px 8px 4px, rgb(255, 0, 0,0.7) 0px 16px 8px, rgb(255, 0, 0,0.7) 0px 32px 16px;
+}
+.hr1{
+  width: 520px;
+}
+.hr2{
+  width: 580px;
+}
+.hr3{
+  width: 490px;
+}
+.hr4{
+  width: 320px;
+}
+.englishhr1{
+  width: 230px
+}
+.englishhr2{
+  width: 570px;
+}
+.englishhr3{
+  width: 310px;
+}
+.englishhr4{
+  width: 490px;
+}
+.englishhr5{
+  width: 300px;
+}
+.container{
+  background-color: lightgrey;
+  border: lightgrey solid 5px;
+  border-radius: 20px;
+  margin: 30px;
+  box-shadow: rgba(211,211,211, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.skil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textconteiner{
+  position: relative;
+  width: 260px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  text-align: center;
+}
+
+.text {
+  
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: #000;
+  border-radius: 50%;
+  font-size: 1.85em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+}
+.text{
+  color: black;
+}
+.container:hover .text {
+  max-height: 180px; 
+}
+.container:hover .textconteiner {
+  height: 180px;
+}
+.container2:hover .text {
+  max-height: 30px; 
+}
+.container2:hover .textconteiner {
+  height: 30px;
+}
+.circle.html {
+  background-image: conic-gradient(rgb(230,81,0) 80%, rgb(24, 23, 23) 0);
+}
+.circle.css {
+  background-image: conic-gradient(rgb(22,144,231) 70%, rgb(24, 23, 23) 0);
+}
+.circle.js {
+  background-image: conic-gradient(rgb(218,185,45) 50%, rgb(24, 23, 23) 0);
+}
+.circle.python {
+  background-image: conic-gradient( rgb(2,119,189) 50%, rgb(24, 23, 23) 0);
+}
+.circle.csharp {
+  background-image: conic-gradient( rgb(104,33,122) 30%, rgb(24, 23, 23) 0);
+}
+.circle.cpp {
+  background-image: conic-gradient( rgb(0,134,212) 20%, rgb(24, 23, 23) 0);
+}
+.circle.unity {
+  background-image: conic-gradient( rgb(255,255,255) 30%, rgb(24, 23, 23) 0);
+}
+.circle.gimp {
+  background-image: conic-gradient( rgb(135,135,135) 60%, rgb(24, 23, 23) 0);
+}
+.circle.sql {
+  background-image: conic-gradient( rgb(255, 255, 255) 50%, rgb(24, 23, 23) 0);
+}
+.circle.eng {
+  background-image: conic-gradient( rgb(229,57,53) 80%, rgb(24, 23, 23) 0);
+}
+.circle.ger {
+  background-image: conic-gradient( rgb(69,90,100) 40%, rgb(24, 23, 23) 0);
+}
+.circle.spa {
+  background-image: conic-gradient( rgb(255,193,7) 10%, rgb(24, 23, 23) 0);
+}
+
+/* <---------------Contact---------------> */
+.contact{
+  background-color: #181616;
+  color: white;
+  text-align: center;
+  height: 1000px;
+}
+.contact h1{
+  font-family: 'Anonymous Pro', monospace;
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 60px;
+  font-size: 3.5em;
+}
+.hr5{
+  width: 640px;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  border: 1px solid red;
+  box-shadow: rgba(255, 0, 0, 0.7) 0px 2px 1px, rgb(255, 0, 0,0.7) 0px 4px 2px, rgb(255,0, 0,0.7) 0px 8px 4px, rgb(255, 0, 0,0.7) 0px 16px 8px, rgb(255, 0, 0,0.7) 0px 32px 16px;
+}
+.englishhr5{
+  margin-left: 60px;
+  margin-bottom: 50px;
+  border: 1px solid red;
+  box-shadow: rgba(255, 0, 0, 0.7) 0px 2px 1px, rgb(255, 0, 0,0.7) 0px 4px 2px, rgb(255,0, 0,0.7) 0px 8px 4px, rgb(255, 0, 0,0.7) 0px 16px 8px, rgb(255, 0, 0,0.7) 0px 32px 16px;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  border: white 10px solid;
+  background-color: white;
+  padding: 40px;
+  border-radius: 5%;
+  width: 550px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.contact input{
+  width: 500px;
+  height: 60px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: rgb(231, 231, 231);
+  border: none;
+  padding: 10px;
+}
+.contact textarea{
+  resize: none;
+  width: 500px;
+  height: 200px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: rgb(231, 231, 231);
+  border: none;
+  padding: 10px;
+}
+.contact .button{
+  width: 200px;
+  height: 60px;
+  font-size: 2em;
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* <---------------Footeer---------------> */
+.footer{
+  text-align: center;
+  background-color: black;
+  height: 50px;
+  color: grey;
+  padding: 10px;
+}
